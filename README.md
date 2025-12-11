@@ -70,8 +70,8 @@ $env:GEMINI_API_KEY="your-api-key-here"
 
 | 参数 | 类型 | 必填 | 说明 |
 |------|------|------|------|
-| `model` | COMBO | 是 | 模型选择（当前：gemini-3-pro-image-preview） |
 | `prompt` | STRING | 是 | 图片生成的文本提示词 |
+| `model` | COMBO | 是 | 模型选择（当前：gemini-3-pro-image-preview） |
 | `aspect_ratio` | COMBO | 是 | 输出宽高比（1:1, 16:9, 9:16 等） |
 | `image_size` | COMBO | 是 | 输出尺寸（1K, 2K, 4K） |
 | `seed` | INT | 是 | Seed 值，用于控制工作流 |

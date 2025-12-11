@@ -47,13 +47,13 @@ class GeminiImageGenerator:
     def INPUT_TYPES(cls):
         return {
             "required": {
-                "model": (cls.MODELS, {
-                    "default": cls.MODELS[0]
-                }),
                 "prompt": ("STRING", {
                     "default": "",
                     "multiline": True,
                     "placeholder": "Enter your prompt here..."
+                }),
+                "model": (cls.MODELS, {
+                    "default": cls.MODELS[0]
                 }),
                 "aspect_ratio": (cls.ASPECT_RATIOS, {
                     "default": "1:1"
@@ -132,7 +132,7 @@ class GeminiImageGenerator:
             mime_type="image/png"
         )
     
-    def generate(self, model, prompt, aspect_ratio, image_size, seed,
+    def generate(self, prompt, model, aspect_ratio, image_size, seed,
                  image_1=None, image_2=None, image_3=None, image_4=None, image_5=None):
         """
         Generate image using Gemini API
