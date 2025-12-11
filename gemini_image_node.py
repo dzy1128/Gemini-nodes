@@ -29,6 +29,8 @@ class GeminiImageGenerator:
         "1:1",
         "16:9",
         "9:16",
+        "10:16",
+        "16:10",
         "4:3",
         "3:4",
         "3:2",
@@ -40,6 +42,7 @@ class GeminiImageGenerator:
     IMAGE_SIZES = [
         "1K",
         "2K",
+        "3K",
         "4K",
     ]
     
